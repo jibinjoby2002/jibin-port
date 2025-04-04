@@ -74,6 +74,7 @@ h6 {
 .home .content h1 {
   font-weight: var(--light);
   letter-spacing: -0.03em;
+  ;
 }
 
 .home .content h2 {
@@ -107,6 +108,10 @@ html {
 
 body {
   line-height: 1.6;
+   display: flex;
+  flex-direction: column;
+ 
+  align-items: center; 
 }
 
 header {
@@ -330,6 +335,7 @@ section {
   margin-bottom: var(--space-xl);
   color: var(--text-light);
   animation: fadeIn 0.8s ease-out 0.6s forwards;
+  text-align: justify;
 }
 
 .social-icons {
@@ -529,6 +535,30 @@ section {
   color: var(--text-light);
   animation: fadeIn 0.8s ease-out 0.6s forwards;
 }
+
+@media screen and (max-width: 768px) {
+  .about .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    ;
+  }
+
+  .about-img {
+    max-width: 100%;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+  
+}
+
+
+
+
+
+
+
 
 
 
@@ -777,10 +807,11 @@ section {
 /* Contact Section */
 .contact {
   width: 100%;
-  background-color: var(--bg-light);
+  background-color:rgb(255, 255, 255);
   padding: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-md);
 }
 
 .contact::before {
@@ -790,7 +821,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%);
+  /* background: linear-gradient(135deg, rgba(255,0,0,0.05) 0%, rgba(0,0,0,0.05) 100%); */
   z-index: 0;
 }
 
@@ -1465,6 +1496,10 @@ footer p::selection {
   padding: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border-radius: 20px;
+  margin: var(--space-lg) 0;
+  width: 100%;
 }
 
 /* ... (keep all previous styles) ... */
@@ -1563,3 +1598,13 @@ footer p::selection {
       font-size: var(--text-sm);
   }
 }
+
+
+@media screen and (max-width :441px) {
+  header {
+    
+    width: 100%;
+  }
+
+}
+
