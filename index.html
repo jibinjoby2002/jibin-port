@@ -1,577 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibin Joby P - Portfolio</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <!-- GSAP Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  </head>
-  <body>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body>
+    <!-- ===== Header ===== -->
     <header>
-      <div class="light"></div>
-      <nav>
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-          <li>
-            <a href="#home"><span>H</span>ome</a>
-          </li>
-          <li>
-            <a href="#about"><span>A</span>bout</a>
-          </li>
-          <li>
-            <a href="#skills"><span>S</span>kills</a>
-          </li>
-          <li>
-            <a href="#portfolio"><span>P</span>ortfolio</a>
-          </li>
-          <li>
-            <a href="#contact"><span>C</span>ontact</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="cont">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home"><span>H</span>ome</a></li>
+                <li><a href="#about"><span>A</span>bout</a></li>
+                <li><a href="#skills"><span>S</span>kills</a></li>
+                <li><a href="#portfolio"><span>P</span>ortfolio</a></li>
+                <li><a href="#contact"><span>C</span>ontact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
     </header>
 
-    <!-- Home Section -->
-    <!-- <section id="home" class="home">
-  <div class="content">
-    <h1>Hello, It's Me</h1>
-    <h2>John Kendric</h2>
-    <h3>I'm a <span class="highlight">Frontend Developer</span></h3>
-    <p>Passionate about building creative and interactive websites.</p>
-    <div class="btn-container">
-      <a href="#" class="btn">Download CV</a>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </div>
-  <div class="image">
-    <img src="assets/profile.png" alt="Profile">
-  </div>
-</section> -->
+    <!-- ===== Main Content ===== -->
+    <main>
+        <!-- ===== Home Section ===== -->
+        <section id="home" class="home">
+            <div class="container">
+                <div class="content">
+                    <h1>Hello, It's Me</h1>
+                    <h2>Jibin Joby P</h2>
+                    <h3>I'm a <span class="highlight"><span id="typing-text"></span></span></h3>
+                    <p>Passionate about building creative and interactive websites.</p>
+                    <div class="btn-container">
+                        <a href="#" class="btn">Download CV</a>
+                        <div class="social-icons">
+                            <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://reddit.com" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+                            <a href="https://twitter.com" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="assets/programmer.jpg" alt="Profile" loading="lazy">
+                </div>
+            </div>
+        </section>
 
-    <!-- Home Section -->
-    <!-- <section id="home" class="home">
-    <div class="content">
-      <h1>Hello, It's Me</h1>
-      <h2>Jibin Joby P</h2> -->
+        <!-- ===== About Section ===== -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-img">
+                    <img src="assets/hackerport.avif" alt="About Image" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2><span class="highlight-a">A</span>bout <span class="highlight-m">M</span>e</h2>
+                    <p>
+                        I'm a passionate frontend developer with experience in building
+                        interactive and responsive websites. I enjoy creating user-friendly
+                        designs and ensuring smooth functionality.
+                    </p>
+                    <p>
+                        My goal is to constantly learn and improve my skills to build
+                        high-quality web applications.
+                    </p>
+                    <a href="#portfolio" class="btn">View My Work</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Typing Animation -->
-    <!-- <h3>I'm a <span class="highlight"><span id="typing-text"></span></span></h3>
-      
-      <p>Passionate about building creative and interactive websites.</p>
-      <div class="btn-container">
-        <a href="#" class="btn">Download CV</a>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+        <!-- ===== Skills Section ===== -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-content">
+                    <div class="skill">
+                        <div class="icon-layer">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span class="percent">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress html"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="icon-layer">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span>CSS</span>
+                            <span class="percent">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress css"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="icon-layer">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span class="percent">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress js"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="icon-layer">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span class="percent">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress react"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="icon-layer">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy">
+                        </div>
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span class="percent">65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress node"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Portfolio Section ===== -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">My Work</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="assets\programmer.jpg" alt="Project 1" loading="lazy">
+                        <div class="overlay">
+                            <h3>Project One</h3>
+                            <p>Web Development</p>
+                            <a href="#" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="assets/project2.jpg" alt="Project 2" loading="lazy">
+                        <div class="overlay">
+                            <h3>Project Two</h3>
+                            <p>Frontend Design</p>
+                            <a href="#" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="assets/project3.jpg" alt="Project 3" loading="lazy">
+                        <div class="overlay">
+                            <h3>Project Three</h3>
+                            <p>Full Stack App</p>
+                            <a href="#" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="assets/project4.jpg" alt="Project 4" loading="lazy">
+                        <div class="overlay">
+                            <h3>Project Four</h3>
+                            <p>JavaScript Game</p>
+                            <a href="#" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="assets/project5.jpg" alt="Project 5" loading="lazy">
+                        <div class="overlay">
+                            <h3>Project Five</h3>
+                            <p>React Website</p>
+                            <a href="#" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="assets/project6.jpg" alt="Project 6" loading="lazy">
+                        <div class="overlay">
+                            <h3>Project Six</h3>
+                            <p>UI/UX Design</p>
+                            <a href="#" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-content">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+                        <p><i class="fas fa-envelope"></i> john.kendric@example.com</p>
+                        <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TryHackMe Section ===== -->
+        <section id="tryhackme" class="tryhackme">
+            <div class="container">
+                <h2 class="section-title">TryHackMe<span class="blink">_</span></h2>
+                <div class="tryhackme-content">
+                    <p class="terminal-text">
+                        > I'm a passionate cybersecurity enthusiast, currently maintaining a 
+                        <strong class="glow">154-day streak</strong> on<br>
+                        > <strong>TryHackMe</strong>, honing skills in <span class="highlight">web exploitation</span>, 
+                        <span class="highlight">binary analysis</span>, and <span class="highlight">penetration testing</span>.
+                    </p>
+                    
+                    <div class="hacker-stats">
+                        <div class="stat-box neon-border">
+                            <h3 class="stat-title">// DAILY STREAK //</h3>
+                            <div class="streak-display">
+                                <img src="https://assets.tryhackme.com/img/badges/streak90.svg" alt="90 Day Streak" class="badge-icon">
+                                <img src="https://assets.tryhackme.com/img/badges/streak30.svg" alt="30 Day Streak" class="badge-icon">
+                                <img src="https://assets.tryhackme.com/img/badges/streak7.svg" alt="7 Day Streak" class="badge-icon">
+                                <span class="streak-count">154</span>
+                            </div>
+                            <p class="stat-desc">CONSECUTIVE DAYS</p>
+                        </div>
+                        
+                        <div class="stat-box neon-border">
+                            <h3 class="stat-title">// BADGES EARNED //</h3>
+                            <div class="iframe-grid">
+                                <div class="iframe-container">
+                                    <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3350655" style='border:none;'></iframe>
+                                </div>
+                                <div class="badges-grid">
+                                    <div class="badge-item">
+                                        <img src="https://assets.tryhackme.com/img/badges/hashcracker.svg" alt="Hash Cracker">
+                                        <span class="badge-name">HASH CRACKER</span>
+                                    </div>
+                                    <div class="badge-item">
+                                        <img src="https://assets.tryhackme.com/img/badges/securityawareness.svg" alt="Security Awareness">
+                                        <span class="badge-name">SECURITY 101</span>
+                                    </div>
+                                    <div class="badge-item">
+                                        <img src="https://assets.tryhackme.com/img/badges/mrrobot.svg" alt="Mr. Robot">
+                                        <span class="badge-name">MR. ROBOT</span>
+                                    </div>
+                                    <div class="badge-item">
+                                        <img src="https://assets.tryhackme.com/img/badges/ohsint.svg" alt="OH SINT">
+                                        <span class="badge-name">OH SINT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-box neon-border">
+                            <h3 class="stat-title">// TOP ACHIEVEMENTS //</h3>
+                            <div class="achievements-grid">
+                                <div class="achievement-item">
+                                    <img src="https://assets.tryhackme.com/img/badges/owasptop10.svg" alt="OWASP Top 10">
+                                    <span class="achievement-name">OWASP TOP 10</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <img src="https://assets.tryhackme.com/img/badges/blue.svg" alt="Blue">
+                                    <span class="achievement-name">BLUE</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <img src="https://assets.tryhackme.com/img/badges/linuxprivesc.svg" alt="Linux PrivEsc">
+                                    <span class="achievement-name">PRIV ESC</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <img src="https://assets.tryhackme.com/img/badges/linux.svg" alt="Linux">
+                                    <span class="achievement-name">LINUX</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-box neon-border">
+                            <h3 class="stat-title">// PROFILE ACCESS //</h3>
+                            <div class="profile-link">
+                                <div class="terminal-command">
+                                    <span class="prompt">$</span>
+                                    <span class="command">curl https://tryhackme.com/p/JibinJoby</span>
+                                </div>
+                                <a href="https://tryhackme.com/p/JibinJoby" target="_blank" class="hacker-btn">
+                                    <span class="btn-text">CONNECT</span>
+                                    <span class="btn-glitch"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Jibin Joby P. All rights reserved.</p>
         </div>
-      </div>
-    </div>
-    
-    <div class="image">
-      <img src="assets/profile.png" alt="Profile">
-    </div>
-  </section> -->
+    </footer>
 
-    <!-- Particle Container -->
-    <div id="particles-js"></div>
-
-    <!-- Home Section -->
-    <section id="home" class="home">
-      <div class="content">
-        <h1>Hello, It's Me</h1>
-        <h2>Jibin Joby P</h2>
-
-        <!-- Typing Animation -->
-        <h3>
-          I'm a <span class="highlight"><span id="typing-text"></span></span>
-        </h3>
-
-        <p>Passionate about building creative and interactive websites.</p>
-
-        <div class="btn-container">
-          <a href="#" class="btn">Download CV</a>
-          <div class="social-icons">
-            <a href="https://github.com" target="_blank" title="GitHub"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="https://linkedin.com" target="_blank" title="LinkedIn"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://facebook.com" target="_blank" title="Facebook"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="https://instagram.com" target="_blank" title="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://reddit.com" target="_blank" title="Reddit"
-              ><i class="fab fa-reddit"></i
-            ></a>
-            <a href="https://twitter.com" target="_blank" title="X (Twitter)"
-              ><i class="fab fa-x-twitter"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="image">
-        <img src="assets/programmer.jpg" alt="Profile" />
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-img">
-          <img src="assets/hackerport.avif" alt="About Image" />
-        </div>
-        <div class="about-content">
-          <h2>
-            <span class="highlight-a">A</span>bout <span class="highlight-m">M</span>e
-          </h2>
-          <p>
-            I'm a passionate frontend developer with experience in building
-            interactive and responsive websites. I enjoy creating user-friendly
-            designs and ensuring smooth functionality.
-          </p>
-          <p>
-            My goal is to constantly learn and improve my skills to build
-            high-quality web applications.
-          </p>
-          <a href="#portfolio" class="btn">View My Work</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-
-    <!-- 
-
-
-<section id="skills" class="skills">
-    <div class="container">
-      <h2 class="section-title">My Skills</h2>
-      <div class="skills-content">
-  
-        <div class="skill">
-          <div class="skill-info">
-            <span>HTML</span>
-            <span class="percent">90%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress html"></div>
-          </div>
-        </div>
-  
-        <div class="skill">
-          <div class="skill-info">
-            <span>CSS</span>
-            <span class="percent">85%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress css"></div>
-          </div>
-        </div>
-  
-        <div class="skill">
-          <div class="skill-info">
-            <span>JavaScript</span>
-            <span class="percent">75%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress js"></div>
-          </div>
-        </div>
-  
-        <div class="skill">
-          <div class="skill-info">
-            <span>React</span>
-            <span class="percent">70%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress react"></div>
-          </div>
-        </div>
-  
-        <div class="skill">
-          <div class="skill-info">
-            <span>Node.js</span>
-            <span class="percent">65%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress node"></div>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section> -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-content">
-          <div class="skill">
-            <div class="icon-layer">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                alt="HTML"
-              />
-            </div>
-            <div class="skill-info">
-              <span>HTML</span>
-              <span class="percent">90%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="progress html"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="icon-layer">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                alt="CSS"
-              />
-            </div>
-            <div class="skill-info">
-              <span>CSS</span>
-              <span class="percent">85%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="progress css"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="icon-layer">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt="JavaScript"
-              />
-            </div>
-            <div class="skill-info">
-              <span>JavaScript</span>
-              <span class="percent">75%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="progress js"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="icon-layer">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                alt="React"
-              />
-            </div>
-            <div class="skill-info">
-              <span>React</span>
-              <span class="percent">70%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="progress react"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="icon-layer">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                alt="Node.js"
-              />
-            </div>
-            <div class="skill-info">
-              <span>Node.js</span>
-              <span class="percent">65%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="progress node"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2 class="section-title">My Work</h2>
-
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <img src="assets/project1.jpg" alt="Project 1" />
-            <div class="overlay">
-              <h3>Project One</h3>
-              <p>Web Development</p>
-              <a href="#" target="_blank">View Project</a>
-            </div>
-          </div>
-
-          <div class="portfolio-item">
-            <img src="assets/project2.jpg" alt="Project 2" />
-            <div class="overlay">
-              <h3>Project Two</h3>
-              <p>Frontend Design</p>
-              <a href="#" target="_blank">View Project</a>
-            </div>
-          </div>
-
-          <div class="portfolio-item">
-            <img src="assets/project3.jpg" alt="Project 3" />
-            <div class="overlay">
-              <h3>Project Three</h3>
-              <p>Full Stack App</p>
-              <a href="#" target="_blank">View Project</a>
-            </div>
-          </div>
-
-          <div class="portfolio-item">
-            <img src="assets/project4.jpg" alt="Project 4" />
-            <div class="overlay">
-              <h3>Project Four</h3>
-              <p>JavaScript Game</p>
-              <a href="#" target="_blank">View Project</a>
-            </div>
-          </div>
-
-          <div class="portfolio-item">
-            <img src="assets/project5.jpg" alt="Project 5" />
-            <div class="overlay">
-              <h3>Project Five</h3>
-              <p>React Website</p>
-              <a href="#" target="_blank">View Project</a>
-            </div>
-          </div>
-
-          <div class="portfolio-item">
-            <img src="assets/project6.jpg" alt="Project 6" />
-            <div class="overlay">
-              <h3>Project Six</h3>
-              <p>UI/UX Design</p>
-              <a href="#" target="_blank">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-
-        <div class="contact-content">
-          <!-- Contact Form -->
-          <form action="#" method="POST" class="contact-form">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Your Name" required />
-            </div>
-
-            <div class="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <textarea
-                name="message"
-                rows="5"
-                placeholder="Your Message"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-
-          <!-- Contact Info -->
-          <div class="contact-info">
-            <h3>Get In Touch</h3>
-            <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
-            <p><i class="fas fa-envelope"></i> john.kendric@example.com</p>
-            <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
-
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TryHackMe Section --><!-- TryHackMe Section -->
-    <section id="tryhackme" class="tryhackme">
-      <div class="container">
-        <h2 class="section-title">TryHackMe</h2>
-        <div class="tryhackme-content">
-          <p>
-            I'm a passionate cybersecurity enthusiast, practicing daily on
-            <strong>TryHackMe</strong> to sharpen my skills in web exploitation,
-            binary analysis, and penetration testing.
-          </p>
-
-          <div class="stats">
-            <div class="stat-box">
-              <h3>Daily Streak</h3>
-              <p>🏅 120+ Days</p>
-            </div>
-
-            <div class="stat-box">
-              <h3>Top Badges</h3>
-              <!-- Added iframe for TryHackMe badge -->
-              <iframe
-                src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3350655"
-                style="border: none; width: 100%; height: 200px"
-              >
-              </iframe>
-            </div>
-
-            <div class="stat-box">
-              <h3>Profile Link</h3>
-              <a
-                href="https://tryhackme.com/p/YOUR-USERNAME"
-                target="_blank"
-                class="btn"
-                >View Profile</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 80,
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-          },
-          color: {
-            value: "#ff3131" /* Particle color (red) */,
-          },
-          shape: {
-            type: "circle",
-            stroke: {
-              width: 0,
-              color: "#000000",
-            },
-            polygon: {
-              nb_sides: 5,
-            },
-          },
-          opacity: {
-            value: 0.5,
-            random: true,
-            anim: {
-              enable: true,
-              speed: 0.5,
-              opacity_min: 0.1,
-              sync: false,
-            },
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: {
-              enable: true,
-              speed: 5,
-              size_min: 0.5,
-              sync: false,
-            },
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 3,
-            direction: "none",
-            random: true,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200,
-            },
-          },
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "grab",
-            },
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-            resize: true,
-          },
-          modes: {
-            grab: {
-              distance: 140,
-              line_linked: {
-                opacity: 1,
-              },
-            },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 0.8,
-              speed: 3,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-            push: {
-              particles_nb: 4,
-            },
-            remove: {
-              particles_nb: 2,
-            },
-          },
-        },
-        retina_detect: true,
-      });
-    </script>
-  </body>
+   <script src="script.js"></script>
+</body>
 </html>
