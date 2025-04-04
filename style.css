@@ -125,7 +125,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-sm) 5%;
+  padding: var(--space-sm) 7%;
   margin: auto 0;
 }
 
@@ -226,7 +226,7 @@ section {
 
 .home .image {
   width: 100%;
-  max-width: 500px; /* Slightly more refined max-width */
+  max-width: 400px; /* Slightly more refined max-width */
   position: relative;
   margin: 0;
   z-index: 1;
@@ -494,7 +494,7 @@ section {
 
 .about-img {
   width: 100%;
-  max-width: 500px; /* Slightly more refined max-width */
+  max-width: 400px; /* Slightly more refined max-width */
   position: relative;
   margin: 0;
   z-index: 1;
